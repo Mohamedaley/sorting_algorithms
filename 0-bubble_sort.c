@@ -14,15 +14,6 @@ void bubble_sort(int *array, size_t size)
 		return;
 	if (sizeof(array) == 4)
 		return;
-	else if (sizeof(array) == 8)
-	{
-		if (array[0] > array[1])
-		{
-			temp = array[0];
-			array[0] = array[1];
-			array[1] = temp;
-		}
-	}
 	for (j = 0; j < size; j++)
 	{
 		for (i = 0; i < size - 1; i++)
